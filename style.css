@@ -1,0 +1,59 @@
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+background-color: #505;
+color: aliceblue;
+padding: 26px 50px;
+margin-bottom: 30px;
+}
+.cart{
+    position: relative;
+    background-color: white;
+    color:black;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 4px;
+}
+.cartAmount{
+    position: absolute;
+    top:0;
+    right: 0;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+}
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4,222px);
+    gap: 30px;
+    justify-content: center;
+}
+@media (max-width:1000px){
+    .shop{
+        grid-template-columns: repeat(2,222px);   
+    }
+}
+.item{
+    border: 2px solid black;
+    border-radius: 4px;
+}
+.price-quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: auto;
+    align-items: center;
+
+}
+.button{
+    display: flex;
+    gap: 8px;
+}
+.bi-dash-lg{
+    color: blue;
+}
+.bi-plus-lg{
+    color: red;
+}
